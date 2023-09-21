@@ -1,0 +1,42 @@
+package bookexam;
+
+public class Student {	//설계도, 붕어빵 틀, 한번이상 사용, 구조
+	//이름
+	//나이
+	//학과
+	//필드(=멤버변수)
+	String name;
+	int age;
+	String depart;
+	
+	//생성자 - 객체를 만들 때 준비시켜 주는 역할, 객체 초기화
+	//			클래스명하고 똑같이 사용
+	public Student() { }; //기본 생성자 
+	
+	
+	public Student(String name, int age, String depart) {	//생성자, 지역변수
+
+		this.name = name;	// 필드 = 지역변수
+		this.age = age;
+		this.depart = depart;
+				
+	}
+	
+	//메소드
+	public void showInfo() {
+		System.out.println("이름 : " + this.name);
+		System.out.println("나이 : " + this.age);
+		System.out.println("학과 : " + this.depart);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	//붕어빵틀 -> 틀을 가져다 붕어빵 만들기 -> 먹기
+
+}

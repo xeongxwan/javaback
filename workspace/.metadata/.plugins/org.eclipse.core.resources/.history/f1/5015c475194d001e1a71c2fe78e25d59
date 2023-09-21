@@ -1,0 +1,9 @@
+package serializationexam;
+
+public class SerialzationExam {
+
+	public static void main(String[] args) {
+
+	}
+
+}

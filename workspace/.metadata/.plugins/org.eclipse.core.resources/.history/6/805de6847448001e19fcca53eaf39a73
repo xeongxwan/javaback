@@ -1,0 +1,52 @@
+package exam;
+import java.util.Scanner;
+public class Exam {
+
+
+	    public static void main(String[] args) {
+	        // 초기화된 값으로 구조체 변수 선언
+	        SchoolInfo school1 = new SchoolInfo("Jejuelementary", "6");
+	        
+	        // 새로운 학교와 학년을 입력받아 구조체 변수 선언
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter school name: ");
+	        String newSchoolName = scanner.nextLine();
+	        System.out.print("Enter grade: ");
+	        String newGrade = scanner.nextLine();
+	        scanner.close();
+	        
+	        SchoolInfo school2 = new SchoolInfo(newSchoolName, newGrade);
+	        
+	        // 출력
+	        System.out.println("Initial values:");
+	        school1.printInfo();
+	        System.out.println("Input values:");
+	        school2.printInfo();
+	    }
+	}
+
+	class SchoolInfo {
+	    String schoolName;
+	    String grade;
+	    
+	    // 생성자
+	    public SchoolInfo(String schoolName, String grade) {
+	        this.schoolName = schoolName;
+	        this.grade = grade;
+	    }
+	    
+	    // 정보 출력 메서드
+	    public void printInfo() {
+	        System.out.println(grade + " grade in " + schoolName + " school");
+	    }
+	}
+
+
+
+
+	       
+	
+	    }
+}
+
+

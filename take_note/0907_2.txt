@@ -1,0 +1,49 @@
+ JDBC(JAVA DataBase connerctivity)
+	- 자바 와 데이터베이스를 연결
+	- jdbc 인터페이스를 통해 실제 db와 작업하는 것은 jdbc driver
+	- jdbc driver는 dbms마다 별도로 다운 받아 사용
+
+1. java.sql 패키지
+
+2. DriverManager
+	- JDBC Driver를 관리하며 DB와 연결해서 Connection 구현 객체를 생성
+
+3. Connection
+	- 인터페이스 
+	- Statement, PreparedStatement, CallableStatement 구현 객체를 생성
+	- 트랜잭션 처리 및 DB 연결을 끊을 때 사용
+
+4. Statement
+	- 인터페이스
+	- SQL의 ddl과 dml을 실행할 때 사용
+	- 주로 변경되지 않는 정적 SQL문을 실행할 때 사용
+
+5. PreparedStatement
+	- 인터페이스
+	- Statement와 동일하게 SQL의 ddl과 의dml을 실행할 때 사용
+	- 매개변수화된 SQL 문을 사용할 수 있기 때문에 편리성과 보안성이 좋음
+
+6. CllavleStatement
+	- 인터페이스
+	- DB에 저장되있는 프로시저와 함수를 호출할때 사용
+
+7.ResultSet
+	- db에서 가져온 데이터를 읽을 때 사용
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+		
+
+
+
+

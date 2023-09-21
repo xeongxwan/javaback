@@ -1,0 +1,19 @@
+package bookexam;
+
+public class StudentExam {
+
+	public static void main(String[] args) {
+		Student sl = new SchoolExam("Songjunghyuk", "Beolmal ",23);	//붕어빵(객체)
+		
+		//붕어빵 먹기
+		sl.showInfo();
+		
+		
+	}
+
+}
+//public Student(String name, int age, String depart) {	//생성자, 지역변수
+//
+//	this.name = name;	// 필드 = 지역변수
+//	this.age = age;
+//	this.depart = depart;

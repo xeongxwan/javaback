@@ -1,0 +1,30 @@
+package exam;
+import java.util.Scanner;
+public class Exam {
+
+	
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        
+	        // 초기 변수 선언 및 초기화
+	        String defaultSchoolName = "Jejuelementary";
+	        String defaultGrade = "6";
+	        
+	        // 초기 변수 출력
+	        System.out.println(defaultGrade + " GRADE IN " + defaultSchoolName.toUpperCase() + " SCHOOL");
+	        
+	        // 사용자 입력 받기
+	        System.out.print("새로운 학교명을 입력하세요 (20자 이하의 영문자): ");
+	        String newSchoolName = scanner.nextLine();
+	        
+	        System.out.print("새로운 학년을 입력하세요: ");
+	        String newGrade = scanner.nextLine();
+	        
+	        // 결과 출력
+	        System.out.println(defaultGrade + " GRADE IN " + defaultSchoolName.toUpperCase() + " SCHOOL");
+	        System.out.println(newGrade + " GRADE IN " + newSchoolName.toLowerCase() + " school");
+	        
+	        scanner.close();
+	    }
+	}
+

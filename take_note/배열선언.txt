@@ -1,0 +1,47 @@
+
+package bookexam;
+
+public class Exam_15 {
+
+	public static void main(String[] args) {
+		//배열 - 메모리상에 같은 자료형을 담는 연속적인 공간
+		
+		//방법1		배열에 담긴 값을 모를때
+		int[] arr = new int[3];
+		arr[0] = 10;
+		arr[1] = 20;
+		arr[2] = 30;
+		
+		//방법2		배열에 담긴 값을 알고 있을때
+		int[] aa = new int[] {10,20,30};
+		
+		//방법3		배열에 담긴 값을 알고 있을때
+		int[] bb = {100,200,300};
+		
+		//방법4		배열에 담긴 값을 알고 있을때
+		int[] cc;
+		cc = new int[] {10,20,30};
+		
+		
+		//출력
+		for(int i =0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		
+		for(int i =0; i<aa.length; i++) {
+			System.out.println(aa[i]);
+		}
+		
+		for(int i =0; i<bb.length; i++) {
+			System.out.println(bb[i]);
+		}
+		
+		for(int i =0; i<cc.length; i++) {
+			System.out.println(cc[i]);
+		}
+		
+		
+		
+	}
+
+}

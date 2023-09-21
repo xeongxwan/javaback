@@ -1,0 +1,100 @@
+1.0으로 나누는 연산
+	1) 정수/0 : ArithmeticExcepition 예외 발생
+		0으로 나누는  것은 불가
+	2)실수/0.0 : Infinitiy(무한대)
+	  실수 % 0.0: NaN(Not a Number);
+	에러나 예외가 발생하지는 않지만
+	이것을 연산에 사용하면 값이 infinity나 NaN으로 처리됨
+	따라서 0.0으로 나누는 것은 하지 않음
+	3) Infinity나 Nan을 체크
+	boolean result = Double.isInfinte(변수);
+			변수에 담긴 값이 Infinity이면 true발생
+			아니면 false발생
+	boolean result = Double.isNan변수);
+			변수에 담긴 값이 Nan이면 true발생
+			아니면 false발생
+
+===============================================
+2.제어문:실행의 흐름을 바꿀 수 있음
+	조건문 : if, if~else, if ~ else if...else, switch문
+	반복문 : for,while, do-while
+	continue,break
+
+3.조건문
+	결과가 true/false를 알 수 있는 것
+	0-false, 1-true(0이외의 숫자)
+	
+	1)if문
+		if(조건) {
+			조건의 결과가 참일 때 실행할 문장
+		}
+	2)if ~ else
+		if(조건){
+			조건의 결과가 참일 때 실행할 문장
+		)else{
+			조건의 결과가 거짓일 때 실행할 문장
+		}
+
+	3) if ~ else if .. else
+		if(조건) {
+			조건의 결과가 참일 때 실행할 문장
+		}else if(조건){
+			조건의 결과가 참일 때 실행할 문장
+		}else if(조건){
+		
+			...
+		}else{
+			위 조건들을 모두 만족하지 않을때
+		}
+
+	4) switch 문(jdk 버전이 상위로 올라갈 수록 유연해짐)
+		jdk 11버전을 기준
+		- 0개 이상의 case절과 0이나 1개의 default 절로
+		- 연산식 : 정수,문자,문자열
+
+		switch(변수){
+			case값1:
+				실행내용;
+				break;
+			case값2:
+				실행내용;
+				break;
+			case값3:
+				실행내용;
+				break;
+			....
+			default :
+				실행할 문장
+		}
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

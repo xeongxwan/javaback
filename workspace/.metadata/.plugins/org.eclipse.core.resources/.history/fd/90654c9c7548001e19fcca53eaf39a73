@@ -1,0 +1,52 @@
+package exam;
+import java.util.Scanner;
+public class Exam {
+
+	    public static void main(String[] args) {
+	      
+	        SchoolInfo school1 = new SchoolInfo("jejuelementry", "6");
+
+	     
+	        Scanner scanner = new Scanner(System.in);
+	        String newSchoolName = scanner.nextLine();
+	        System.out.print("20자 이하의 학교 이름을 입력하세요: ");
+	        if (newSchoolName.length() > 20) {
+	            System.out.println("학교 이름은 20자 이하로 입력해주세요.");
+	         
+	        }
+	       
+	        System.out.print("학년을 입력하세요: ");
+	        String newGrade = scanner.nextLine();
+	        scanner.close();
+
+	        SchoolInfo school2 = new SchoolInfo(newSchoolName, newGrade);
+
+	    
+	        System.out.println("초기값:");
+	        school1.printInfo();
+	        System.out.println("입력값:");
+	        school2.printInfo();
+	    }
+	}
+
+	class SchoolInfo {
+	    String name;
+	    String grade;
+
+
+	    public SchoolInfo(String name, String grade) {
+	        this.name = name ;
+	        this.grade = grade;
+	    }
+
+
+	    public void printInfo() {
+	        System.out.println(grade + " grade  " + name + " school ");
+	    }
+	
+
+	
+	    
+}
+
+

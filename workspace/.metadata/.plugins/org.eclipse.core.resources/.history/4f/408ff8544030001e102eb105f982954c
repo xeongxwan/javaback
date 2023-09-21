@@ -1,0 +1,17 @@
+package bookexam;
+
+public class SchoolExam_main {
+
+	public static void main(String[] args) {
+	
+			SchoolExam st = new SchoolExam("홍길동", 23,"소프트웨어");
+			
+			//붕어빵 먹기
+			st.showInfo();
+			
+		
+	
+	}
+	}
+
+
